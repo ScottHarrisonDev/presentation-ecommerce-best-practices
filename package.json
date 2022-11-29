@@ -1,0 +1,23 @@
+{
+  "name": "presentation-ecommerce-best-practices",
+  "version": "1.0.0",
+  "description": "Presentation about web best practices and how they apply in specifically an ecommerce context",
+  "main": "index.html",
+  "dependencies": {
+    "serve": "^14.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "serve": "serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ScottHarrisonDev/presentation-ecommerce-best-practices.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ScottHarrisonDev/presentation-ecommerce-best-practices/issues"
+  },
+  "homepage": "https://github.com/ScottHarrisonDev/presentation-ecommerce-best-practices#readme"
+}

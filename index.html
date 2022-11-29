@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Best practices and how ecommerce breaks them</title>
+
+		<link rel="stylesheet" href="../reveal.js/dist/reset.css">
+		<link rel="stylesheet" href="../reveal.js/dist/reveal.css">
+		<link rel="stylesheet" href="../reveal.js/dist/theme/black.css">
+
+        <style>
+            .reveal h1,
+            .reveal h2,
+            .reveal p,
+            .reveal li {
+                font-size: 2rem;
+                text-transform: none;
+            }
+            .reveal li {
+                margin-top: 30px;
+            }
+        </style>
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="../reveal.js/plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+                <section data-markdown
+                data-separator-vertical="^\n\n">
+                    <textarea data-template>
+                        # Best practices and how ecommerce breaks them
+                        ---
+                        ## Introduction
+                        - My background as a developer is mainly b2b microsites, web apps and online experiences, very little ecommerce
+                        - Ecommerce seems particularly difficult to adhere to web standards and best practices
+                        ---
+                        ## Best Practice: "Keep your site as light as possible"
+                        The smaller your site is, the quicker it loads and the better experience your users will have.
+                        
+
+                        ## How ecommerce breaks this: Third party scripts everywhere
+                        Due to the conversion based nature of ecommerce there is an abundance of tracking and third party offerings on a lot of ecommerce sites which bloats out the page and can make for a slow TTI.
+                        
+
+                        ## How can we improve on this?
+                        - Audit third party scripts regularly
+                        - When integrating third party scripts and tools, run a performance test to see how damaging this will be, as well as potentially A/B testing, if appropriate, to ensure it will actually deliver value even with a more bloated page.
+                        ---
+                        ## Best Practice: "WCAG AA contrast compliance"
+                        A commonly broken WCAG standard is how readable a piece of text is on it's background colour.
+                        
+
+                        ## How ecommerce breaks this: Frequent updates and eye catching colours
+                        With clients wanting access to choose colours for the site themselves there is always the risk they may select colours without considering WCAG compliance.
+
+
+                        ## How can we improve on this?
+                        - Client education, AA compliance can be quite easy to achieve, even with nice colour combinations
+                        - Providing theming options to the client rather than outright colour selection
+                        ---
+                        ## Best Practice: "Provide the best possible experience for your users"
+                        If a user enjoys using your site they are more likely to hang around
+                        
+
+                        ## How ecommerce breaks this: Dark patterns
+                        In the pursuit of better metrics some sites implement dark patterns to add friction to the users experience. An example of this is making the "Cancel Subscription" button be behind a submenu.
+
+
+                        ## How can we improve on this?
+                        - Be aware of legalities around things like GDPR with some marketing related dark patterns
+                        - Some dark patterns are quite benign, others can be much more powerful, each change should be evaluated independantly 
+                        ---
+                        ## Conclusion
+                        Not many websites are adhering to every best practice, but keeping them in mind and striving for them can only make a better end product
+                    </textarea>
+                </section>
+            
+			</div>
+		</div>
+
+		<script src="../reveal.js/dist/reveal.js"></script>
+		<script src="../reveal.js/plugin/notes/notes.js"></script>
+		<script src="../reveal.js/plugin/markdown/markdown.js"></script>
+		<script src="../reveal.js/plugin/highlight/highlight.js"></script>
+		<script>
+			Reveal.initialize({
+				hash: true,
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
